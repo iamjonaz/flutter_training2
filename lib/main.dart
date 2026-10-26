@@ -21,6 +21,13 @@ class AkuApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
+      darkTheme:ThemeData(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.red,
+          brightness: Brightness.dark,
+        ),
+      ),
+
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Dashboard Mahasiswa'),
