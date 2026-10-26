@@ -16,7 +16,7 @@ class AkuApp extends StatelessWidget {
 
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.indigo,
+          seedColor: Colors.red,
         ),
         useMaterial3: true,
       ),
