@@ -11,7 +11,6 @@ class AkuApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Arjuna Meiureksa',
-
       debugShowCheckedModeBanner: false,
 
       theme: ThemeData(
@@ -21,22 +20,32 @@ class AkuApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      darkTheme:ThemeData(
+      darkTheme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.red,
           brightness: Brightness.dark,
         ),
+        useMaterial3: true,
       ),
 
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Dashboard Mahasiswa'),
-        ),
-        body: const Center(
-          child: Text(
-            'Selamat Belajar Flutter!',
-            style: TextStyle(fontSize: 20),
-          ),
+      home: const ProfilePage(),
+    );
+  }
+}
+
+class ProfilePage extends StatelessWidget {
+  const ProfilePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Dashboard Mahasiswa'),
+      ),
+      body: const Center(
+        child: Text(
+          'Selamat Belajar Flutter!',
+          style: TextStyle(fontSize: 20),
         ),
       ),
     );
