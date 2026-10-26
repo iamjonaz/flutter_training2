@@ -23,7 +23,7 @@ class AkuApp extends StatelessWidget {
 
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Belajar Flutter'),
+          title: const Text('Dashboard Mahasiswa'),
         ),
         body: const Center(
           child: Text(
